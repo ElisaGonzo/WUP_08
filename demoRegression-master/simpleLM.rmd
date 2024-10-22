@@ -37,8 +37,11 @@ plot(WEIGHT~AGE,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-1. Neck--> ARsqrd: 0.87  RST:49.91
-2. Age-->  ARsqrd : 0.55 RST:81.47
+
+Best to Worst
+
+1. Neck-->    ARsqrd: 0.87       RST:49.91     
+2. Age-->     ARsqrd :0.55.      RST:81.47      
 
 The agemodel graphs plots are further away from te line than the neckmodel. Making the age model worst than that neckmodel. 
 
@@ -51,12 +54,15 @@ plot(WEIGHT~HEADLEN,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-Best to Worst 
-1. Neck-->        ARsqrd:0.07. RST:43.91
-2.Head length --> ARsqrd:0.69  RST:67.81
-3.Age -->.        ARsqrd:0.55. RST:81.47
+Best to Worst
+
+1. Neck-->            ARsqrd:0.07.       RST:43.91      
+2.Head length -->     ARsqrd:0.69        RST:67.81      
+3.Age -->.            ARsqrd:0.55.       RST:81.47      
 
 The agemodel graphs plots are further away from te line than the neckmodel and the head length. Making the age model worst than both. However, the neckmodel is still better than the headlenmodel.  
+
+
 ## Model WEIGHT ~ HEADWTH this is an example 
 
 ```{r}
@@ -65,12 +71,13 @@ plot(WEIGHT~HEADWTH,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-Best to Worst 
-1. Neck-->        ARsqrd:0.07. RST:43.91
-2.Head length --> ARsqrd:0.69  RST:67.81
-3. Head wdith --> ARsqrd: 0.60. RST:76.41 
-4.Age -->.        ARsqrd:0.55. RST:81.47
+Best to Worst
 
+1. Neck-->           ARsqrd:0.07.      RST:43.91  
+2.Head length -->    ARsqrd:0.69       RST:67.81   
+3. Head wdith -->    ARsqrd: 0.60.     RST:76.41   
+4.Age -->.           ARsqrd:0.55.      RST:81.47  
+ 
 
 The agemodel graphs plots are further away from te line than any other model. Making the age model the worst. However, the neckmodel is still better than the headlenmodel and the Headlenmodel is better the the headwth model.  
 
@@ -83,13 +90,14 @@ plot(WEIGHT~LENGTH,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
-Best to Worst 
-1. Neck-->        ARsqrd:0.07. RST:43.91
-2.Length-->.      ARsqrd:0.74. RST:61.83
-2.Head length --> ARsqrd:0.69  RST:67.81
-3. Head wdith --> ARsqrd: 0.60. RST:76.41 
-4.Age -->.        ARsqrd:0.55. RST:81.47
+Best to Worst
 
+1. Neck-->           ARsqrd:0.07.    RST:43.91   
+2.Length-->.         ARsqrd:0.74.    RST:61.83  
+2.Head length -->    ARsqrd:0.69     RST:67.81  
+3. Head wdith -->    ARsqrd: 0.60.   RST:76.41    
+4.Age -->.           ARsqrd:0.55.    RST:81.47   
+  
 
 The agemodel graphs plots are further away from te line than any other model. Making the age model the worst. The neckmodel is still better than the headlenmodel and the Headlenmodel is better the the headwth model. However, the length is better then the head length. 
 
@@ -102,12 +110,15 @@ abline(simp)
 summary.lm(simp)
 ```
 
-Best to Worst 
-1. Chest        ARsqrd: 0.92.  RST:33.08
-2. Neck         ARsqrd: 0.07    RST:49.91
-3. Length       ARsqrd: 0.74    RST:61.83
-4. Head length  ARsqrd: 0.69    RST:67.81
-5. Head width   Arsqrd: 0.60    RST:76.41
-6. Age          ARsrd: 0.55     RST:81.47  
+Best to Worst
+
+1. Chest          ARsqrd: 0.92.     RST:33.08   
+2. Neck           ARsqrd: 0.07      RST:49.91   
+3. Length         ARsqrd: 0.74      RST:61.83   
+4. Head length    ARsqrd: 0.69      RST:67.81   
+5. Head width     Arsqrd: 0.60      RST:76.41   
+6. Age            ARsrd: 0.55       RST:81.47    
+
 
 After completing all the models, the best model is the chestmodel. The Chest adjusted R squared is higher than the other models, while the standard error is low. As seen in the graph, since most dots are closet to the line. As the lost continues on the plots of the models are further away from the lines than the chestmodels. Making the standard error higher and adjusted R squared lower. 
+
