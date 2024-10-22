@@ -65,6 +65,15 @@ plot(WEIGHT~HEADWTH,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
+Best to Worst 
+1. Neck-->        ARsqrd:0.07. RST:43.91
+2.Head length --> ARsqrd:0.69  RST:67.81
+3. Head wdith --> ARsqrd: 0.60. RST:76.41 
+4.Age -->.        ARsqrd:0.55. RST:81.47
+
+
+The agemodel graphs plots are further away from te line than any other model. Making the age model the worst. However, the neckmodel is still better than the headlenmodel and the Headlenmodel is better the the headwth model.  
+
 
 ## Model WEIGHT ~ Length  this is an example 
 
@@ -74,7 +83,18 @@ plot(WEIGHT~LENGTH,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
+Best to Worst 
+1. Neck-->        ARsqrd:0.07. RST:43.91
+2.Length-->.      ARsqrd:0.74. RST:61.83
+2.Head length --> ARsqrd:0.69  RST:67.81
+3. Head wdith --> ARsqrd: 0.60. RST:76.41 
+4.Age -->.        ARsqrd:0.55. RST:81.47
 
+
+The agemodel graphs plots are further away from te line than any other model. Making the age model the worst. The neckmodel is still better than the headlenmodel and the Headlenmodel is better the the headwth model. However, the length is better then the head length. 
+
+
+## Model WEIGHT ~ Chest this is an example 
 ```{r}
 chestmodel <- lm(WEIGHT~CHEST,data=bears)
 plot(WEIGHT~CHEST,data=bears)
